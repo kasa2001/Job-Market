@@ -1,0 +1,21 @@
+{
+	"type": "project",
+	"license": "proprietary",
+	"require": {
+		"php": "^7.1",
+		"blackframework/core": "2.*",
+		"blackframework/routing": "2.*",
+        "ext-pdo": "*"
+    },
+
+	"autoload": {
+		"psr-4": {
+			"App\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\": "tests/"
+		}
+	}
+}

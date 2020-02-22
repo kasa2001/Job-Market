@@ -1,0 +1,18 @@
+# File required for Apache HTTPD 2.4
+
+Options -MultiViews
+
+RewriteEngine ON
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^.+$ index.php [QSA,L]
+
+
+# Virtual Host configuration
+#<VirtualHost *:80>
+#	 DirectoryIndex index.php
+#    DocumentRoot "${SRVROOT}/htdocs/{directiory}/public"
+#    ServerName {server-name}
+#</VirtualHost>
